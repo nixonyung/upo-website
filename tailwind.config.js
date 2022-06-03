@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: 'Tangerine',
+        cursive: 'Calligraffitti',
         Mont: 'Montserrat',
         MontAlt: 'Montserrat Alternates',
         // Recursive: 'Recursive',
