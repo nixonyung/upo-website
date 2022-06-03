@@ -10,7 +10,10 @@ export default function StyledNavLink({
   ...props
 }: StyledNavLinkProps) {
   return (
-    <NavLink {...props} className='font-Mont px-3 pt-3 pb-1 uppercase' smooth>
+    <NavLink
+      {...props}
+      className='font-MontAlt hover:not-italic hover:border-b-2 px-3 pt-3 pb-1 italic uppercase transition-all border-gray-200 border-solid'
+      smooth>
       {children}
     </NavLink>
   )
