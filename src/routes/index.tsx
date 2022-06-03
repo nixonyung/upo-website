@@ -1,6 +1,6 @@
 export default function Index() {
   return (
-    <div>
+    <div className='mt-20'>
       <h1>index</h1>
     </div>
   )

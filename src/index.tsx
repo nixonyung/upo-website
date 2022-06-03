@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Navbar from './components/navbar'
+import { Navbar } from './components/Navbar'
 import './index.css'
 import Index from './routes'
 import Cabinet from './routes/cabinet'
