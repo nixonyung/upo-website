@@ -1,0 +1,35 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "env": {
+    "browser": true
+    // "jest": true
+  },
+
+  "plugins": ["react", "react-hooks", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/triple-slash-reference": "off"
+  },
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
