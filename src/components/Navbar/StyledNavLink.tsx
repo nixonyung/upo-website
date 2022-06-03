@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 type StyledNavLinkProps = {
   children: React.ReactNode
-  to: string
+  to: Partial<Location> | string
 }
 
 export default function StyledNavLink({
@@ -10,16 +10,7 @@ export default function StyledNavLink({
   ...props
 }: StyledNavLinkProps) {
   return (
-    <NavLink
-      {...props}
-      className='font-Mont px-3 pt-3 pb-1 uppercase'
-      style={({ isActive }) =>
-        isActive
-          ? {
-              borderBottom: '3px solid white',
-            }
-          : {}
-      }>
+    <NavLink {...props} className='font-Mont px-3 pt-3 pb-1 uppercase' smooth>
       {children}
     </NavLink>
   )

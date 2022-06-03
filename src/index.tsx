@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import './index.css'
-import Index from './routes'
-import Cabinet from './routes/cabinet'
-import Concerts from './routes/concerts'
+import Cabinet from './routes/Cabinet'
+import Concerts from './routes/Concerts'
+import Index from './routes/Index'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
