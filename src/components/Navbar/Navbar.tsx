@@ -4,7 +4,7 @@ import StyledNavLogo from './StyledNavLogo'
 
 export default function Navbar() {
   return (
-    <div className='max-w-7xl fixed top-0 left-0 right-0 z-40 flex items-center h-20 gap-1 px-6 py-3 mx-auto'>
+    <nav className='max-w-7xl fixed top-0 left-0 right-0 z-40 flex items-center h-20 gap-1 px-6 py-3 mx-auto'>
       <Link to='/#top' smooth>
         <StyledNavLogo />
       </Link>
@@ -20,6 +20,6 @@ export default function Navbar() {
       <StyledNavLink to='cabinet'>Cabinet</StyledNavLink>
       <StyledNavLink to='/#contact'>Contact</StyledNavLink>
       <StyledNavLink to='/#links'>Links</StyledNavLink>
-    </div>
+    </nav>
   )
 }
