@@ -45,14 +45,14 @@ export default function Footer() {
             </ActionIcon>
           </a>
         </div>
-        <span className='font-OpenSans text-footer tracking-widest text-center text-gray-500'>
+        <span className='font-Mont text-footer font-light tracking-widest text-center text-gray-500'>
           Mailbox #61, LG5, Student Center,
           <br />
           Hong Kong University of Science and Technology,
           <br />
           Clear Water Bay, Kowloon, Hong Kong
         </span>
-        <span className='font-OpenSans text-footer tracking-widest text-center text-gray-500'>
+        <span className='font-Mont text-footer font-light tracking-widest text-center text-gray-500'>
           ©2022 University Philharmonic Orchestra, HKUSTSU
         </span>
       </div>
