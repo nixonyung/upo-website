@@ -1,41 +1,71 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ActionIcon } from '@mantine/core'
-import { useViewportSize, useWindowScroll } from '@mantine/hooks'
+import { ActionIcon, Drawer } from '@mantine/core'
+import { useMediaQuery, useWindowScroll } from '@mantine/hooks'
+import React, { useState } from 'react'
 import NavItems from './NavItems.json'
 import StyledNavLink from './StyledNavLink'
 import StyledNavLogo from './StyledNavLogo'
 
 export default function Navbar() {
   const [scroll, ,] = useWindowScroll()
-  const { width } = useViewportSize()
+  const lg = useMediaQuery('(min-width: 1024px)')
+  const [MobileNavOpened, setMobileNavOpened] = useState(false)
 
-  const laptopNavbar = (
+  return (
     <nav
       className={`${
-        scroll.y > 100 ? 'backdrop-blur-lg' : ''
-      } fixed top-0 inset-x-0 z-40 flex items-center justify-center h-20 gap-3 px-6 py-3 mx-auto transition-all duration-500`}>
-      <StyledNavLogo />
+        scroll.y > (lg ? 120 : 40)
+          ? 'backdrop-blur-lg bg-black bg-opacity-40'
+          : ''
+      } fixed inset-x-0 top-0 z-20 px-6 transition-all duration-300 ease-linear`}>
+      <div className='flex items-center justify-center h-16 max-w-5xl gap-3 mx-auto'>
+        <StyledNavLogo />
 
-      <span className='flex-grow max-w-xl'></span>
+        <span className='flex-grow'></span>
 
-      {NavItems.map(({ name, path }) => (
-        <StyledNavLink to={path} key={name}>
-          {name}
-        </StyledNavLink>
-      ))}
+        {lg ? (
+          <>
+            {NavItems.map(({ name, path }) => (
+              <StyledNavLink to={path} key={name}>
+                {name}
+              </StyledNavLink>
+            ))}
+          </>
+        ) : (
+          <ActionIcon
+            variant='outline'
+            color='gray'
+            onClick={() => setMobileNavOpened(true)}
+            className='z-100'>
+            <FontAwesomeIcon icon={faBars} />
+          </ActionIcon>
+        )}
+      </div>
+
+      {!lg && (
+        <Drawer
+          opened={MobileNavOpened}
+          onClick={() => {
+            setMobileNavOpened(false)
+          }}
+          onClose={() => setMobileNavOpened(false)}
+          overlayBlur={3}
+          position='right'
+          size='xs'
+          withCloseButton={false}
+          classNames={{
+            drawer: 'bg-transparent mt-20 mr-3',
+          }}>
+          <div className='flex flex-col items-end gap-6'>
+            {NavItems.map(({ name, path }) => (
+              <StyledNavLink to={path} key={name}>
+                {name}
+              </StyledNavLink>
+            ))}
+          </div>
+        </Drawer>
+      )}
     </nav>
   )
-
-  const mobileNavbar = (
-    <nav className='backdrop-blur-lg fixed inset-x-0 top-0 z-40 flex items-center justify-center h-16 px-6 transition-all duration-500'>
-      <StyledNavLogo />
-      <span className='flex-grow max-w-xl'></span>
-      <ActionIcon variant='outline'>
-        <FontAwesomeIcon icon={faBars} />
-      </ActionIcon>
-    </nav>
-  )
-
-  return width > 1023 ? laptopNavbar : mobileNavbar
 }

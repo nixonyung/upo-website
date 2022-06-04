@@ -1,5 +1,3 @@
-// import { NavHashLink as NavLink } from 'react-router-hash-link'
-
 import { NavLink } from 'react-router-dom'
 
 type StyledNavLinkProps = {
@@ -14,7 +12,7 @@ export default function StyledNavLink({ children, to }: StyledNavLinkProps) {
       className={({ isActive }) =>
         `${
           isActive ? 'border-b-2' : ''
-        } font-MontAlt hover:not-italic px-3 pt-3 pb-1 italic uppercase transition-all border-gray-200 border-solid`
+        } font-MontAlt hover:not-italic px-3 pt-3 pb-1 italic uppercase transition-all border-gray-200 border-solid text-white`
       }>
       {children}
     </NavLink>

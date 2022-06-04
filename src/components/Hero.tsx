@@ -1,5 +1,5 @@
 import { BackgroundImage } from '@mantine/core'
-import HeroImg from '../images/hero.png'
+import HeroImg from '../images/hero.jpg'
 
 export default function Hero() {
   return (

@@ -9,7 +9,10 @@ export default function Index() {
   useEffect(() => {
     if (location.hash === '') window.scrollTo({ top: 0, behavior: 'smooth' })
     else if (location.hash === '#news' && NewsRef.current != null)
-      NewsRef.current.scrollIntoView({ behavior: 'smooth' })
+      window.scrollTo(
+        0,
+        window.pageYOffset + NewsRef.current.getBoundingClientRect().top - 80
+      )
   }, [location])
 
   return (

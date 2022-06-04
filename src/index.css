@@ -10,8 +10,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
   background: black;
   color: white;
   font-family: 'Roboto';
+  scroll-behavior: smooth;
 }
