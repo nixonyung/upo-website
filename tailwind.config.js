@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         Mont: 'Montserrat',
         MontAlt: 'Montserrat Alternates',
+        Inter: 'Inter',
         // Recursive: 'Recursive',
       },
       fontSize: {
