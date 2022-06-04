@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: 'Calligraffitti',
         Mont: 'Montserrat',
         MontAlt: 'Montserrat Alternates',
         OpenSans: 'Open Sans',
