@@ -1,12 +1,13 @@
 import cabinetInfo from '../cabinetInfo'
 import { Gallery } from '../components/Gallery'
 import { Section } from '../components/Section'
+// import constitutionPDF from '../static/constitution.pdf'
 
 export default function About() {
   return (
     <div className='mt-20 mb-12'>
       <Section header='About UPO'>
-        <p className='font-Inter md:text-lg md:leading-10 lg:translate-x-5 text-sm leading-9 text-left'>
+        <p className='font-Inter md:text-lg md:leading-10 text-sm leading-9 text-left'>
           UPO is a student-run orchestra under the Student Union of Hong Kong
           University of Science and Technology (HKUSTSU).
           <br />
@@ -33,6 +34,15 @@ export default function About() {
 
       <Section header='Cabinet Members'>
         <Gallery items={cabinetInfo} />
+      </Section>
+
+      <Section header='Useful Links'>
+        <button>
+          <a href={process.env.PUBLIC_URL + '/constitution.pdf'}>
+            Consitution of UPO
+          </a>
+          {/* <a href={constitutionPDF}>Consitution of UPO</a> */}
+        </button>
       </Section>
     </div>
   )

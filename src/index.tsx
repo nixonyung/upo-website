@@ -10,7 +10,6 @@ import Index from './routes/Index'
 import RouterScrollToTop from './utils/RouterScrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-document.title = 'University Philharmonic Orchestra, HKUSTSU'
 
 root.render(
   <React.StrictMode>
