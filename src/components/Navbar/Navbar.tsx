@@ -35,6 +35,7 @@ export default function Navbar() {
         ) : (
           <ActionIcon
             variant='outline'
+            radius='xl'
             color='gray'
             onClick={() => setMobileNavOpened(true)}
             className='z-100'>
