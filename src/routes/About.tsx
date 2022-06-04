@@ -5,7 +5,7 @@ import { Section } from '../components/Section'
 
 export default function About() {
   return (
-    <div className='mt-20 mb-12'>
+    <>
       <Section header='About UPO'>
         <p className='font-Inter md:text-lg md:leading-10 text-sm leading-9 text-left'>
           UPO is a student-run orchestra under the Student Union of Hong Kong
@@ -41,9 +41,8 @@ export default function About() {
           <a href={process.env.PUBLIC_URL + '/constitution.pdf'}>
             Consitution of UPO
           </a>
-          {/* <a href={constitutionPDF}>Consitution of UPO</a> */}
         </button>
       </Section>
-    </div>
+    </>
   )
 }

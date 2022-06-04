@@ -7,6 +7,7 @@ export default function Index() {
   const location = useLocation()
   const NewsRef = useRef<HTMLDivElement>(null)
 
+  // dealing with scrolling to News when the corresponding NavLink is clicked
   useEffect(() => {
     console.log(NewsRef.current)
     if (location.hash === '') window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -20,13 +21,14 @@ export default function Index() {
   }, [location])
 
   return (
-    <div className='mb-12'>
+    <>
       <Hero />
 
       <Section innerRef={NewsRef} header='haha'>
         <p>hahahaha</p>
       </Section>
+
       <div className='h-screen'></div>
-    </div>
+    </>
   )
 }
