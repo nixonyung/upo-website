@@ -6,10 +6,12 @@ module.exports = {
         cursive: 'Calligraffitti',
         Mont: 'Montserrat',
         MontAlt: 'Montserrat Alternates',
+        OpenSans: 'Open Sans',
         // Recursive: 'Recursive',
       },
       fontSize: {
         '99xl': '24rem',
+        footer: 'clamp(0.5rem,2vw,1rem)',
       },
       spacing: {
         '1/20': '5%',

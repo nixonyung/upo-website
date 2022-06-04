@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 import { Navbar } from './components/Navbar'
 import './index.css'
 import About from './routes/About'
@@ -20,6 +21,7 @@ root.render(
         <Route path='about' element={<About />} />
         <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 )
