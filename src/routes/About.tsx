@@ -1,3 +1,11 @@
+import {
+  faDrum,
+  faGraduationCap,
+  faGuitar,
+  faMicrophoneAlt,
+  faStickyNote,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cabinetInfo from '../cabinetInfo'
 import { Gallery } from '../components/Gallery'
 import { Section } from '../components/Section'
@@ -37,11 +45,73 @@ export default function About() {
       </Section>
 
       <Section header='Useful Links'>
-        <button>
-          <a href={process.env.PUBLIC_URL + '/constitution.pdf'}>
+        <div className='w-fit flex flex-col items-start gap-3 mx-auto'>
+          <a
+            href={process.env.PUBLIC_URL + '/constitution.pdf'}
+            className='md:text-lg text-blue-400 underline'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faStickyNote}
+              fixedWidth
+              size='lg'
+              className='mr-2'
+            />
             Consitution of UPO
           </a>
-        </button>
+          <a
+            href='http://su.ust.hk/'
+            className='md:text-lg text-blue-400 underline'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faGraduationCap}
+              fixedWidth
+              size='lg'
+              className='mr-2'
+            />
+            HKUST Student Union
+          </a>
+          <a
+            href='https://choir.su.ust.hk/'
+            className='md:text-lg text-blue-400 underline'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faMicrophoneAlt}
+              fixedWidth
+              size='lg'
+              className='mr-2'
+            />
+            The University Choir
+          </a>
+          <a
+            href='https://www.instagram.com/hkustsu_bandsoc/'
+            className='md:text-lg text-blue-400 underline'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faGuitar}
+              fixedWidth
+              size='lg'
+              className='mr-2'
+            />
+            Band Society
+          </a>
+          <a
+            href='https://www.instagram.com/corch_hkustsu/'
+            className='md:text-lg text-blue-400 underline'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faDrum}
+              fixedWidth
+              size='lg'
+              className='mr-2'
+            />
+            Chinese Orchestra
+          </a>
+        </div>
       </Section>
     </>
   )
