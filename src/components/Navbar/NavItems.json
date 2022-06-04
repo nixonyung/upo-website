@@ -1,0 +1,14 @@
+[
+  {
+    "name": "News",
+    "path": "/#news"
+  },
+  {
+    "name": "About",
+    "path": "/about"
+  },
+  {
+    "name": "Concerts",
+    "path": "/concerts"
+  }
+]

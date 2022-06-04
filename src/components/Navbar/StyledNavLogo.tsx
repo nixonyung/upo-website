@@ -1,9 +1,10 @@
 import { Image } from '@mantine/core'
+import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
 
 export default function StyledNavLogo() {
   return (
-    <div>
+    <Link to='/#'>
       <div className='flex items-center'>
         <Image src={Logo} height={40} />
         <span className='font-Mont ml-2 text-lg'>UST</span>
@@ -11,6 +12,6 @@ export default function StyledNavLogo() {
           UPO
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
