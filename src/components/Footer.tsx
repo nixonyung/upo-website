@@ -16,7 +16,11 @@ export default function Footer() {
             href='https://www.facebook.com/HkustsuUniversityPhilharmonicOrchestra?ref=profile'
             target='_blank'
             rel='noreferrer'>
-            <ActionIcon size='xl' radius='xl' variant='outline'>
+            <ActionIcon
+              size='xl'
+              radius='xl'
+              variant='outline'
+              className='hover:text-white'>
               <FontAwesomeIcon icon={faFacebookF} size='lg' />
             </ActionIcon>
           </a>
@@ -24,7 +28,11 @@ export default function Footer() {
             href='https://www.instagram.com/upo_hkustsu/'
             target='_blank'
             rel='noreferrer'>
-            <ActionIcon size='xl' radius='xl' variant='outline'>
+            <ActionIcon
+              size='xl'
+              radius='xl'
+              variant='outline'
+              className='hover:text-white'>
               <FontAwesomeIcon icon={faInstagram} size='lg' />
             </ActionIcon>
           </a>
@@ -32,7 +40,11 @@ export default function Footer() {
             href='https://www.youtube.com/channel/UCmG0rAQrVdod_Aal_aaovCQ'
             target='_blank'
             rel='noreferrer'>
-            <ActionIcon size='xl' radius='xl' variant='outline'>
+            <ActionIcon
+              size='xl'
+              radius='xl'
+              variant='outline'
+              className='hover:text-white'>
               <FontAwesomeIcon icon={faYoutube} size='lg' />
             </ActionIcon>
           </a>
@@ -40,7 +52,11 @@ export default function Footer() {
             href='mailto:su_upo@connect.ust.hk'
             target='_blank'
             rel='noreferrer'>
-            <ActionIcon size='xl' radius='xl' variant='outline'>
+            <ActionIcon
+              size='xl'
+              radius='xl'
+              variant='outline'
+              className='hover:text-white'>
               <FontAwesomeIcon icon={faEnvelope} size='lg' />
             </ActionIcon>
           </a>
