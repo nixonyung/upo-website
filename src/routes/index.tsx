@@ -11,10 +11,12 @@ export default function Index() {
     console.log(NewsRef.current)
     if (location.hash === '') window.scrollTo({ top: 0, behavior: 'smooth' })
     else if (location.hash === '#news' && NewsRef.current != null)
-      window.scrollTo(
-        0,
-        window.pageYOffset + NewsRef.current.getBoundingClientRect().top - 80
-      )
+      window.scrollTo({
+        left: 0,
+        top:
+          window.pageYOffset + NewsRef.current.getBoundingClientRect().top - 80,
+        behavior: 'smooth',
+      })
   }, [location])
 
   return (

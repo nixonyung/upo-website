@@ -7,6 +7,7 @@ import './index.css'
 import About from './routes/About'
 import Concerts from './routes/Concerts'
 import Index from './routes/Index'
+import RouterScrollToTop from './utils/RouterScrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 document.title = 'University Philharmonic Orchestra, HKUSTSU'
@@ -14,6 +15,8 @@ document.title = 'University Philharmonic Orchestra, HKUSTSU'
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <RouterScrollToTop />
+
       <Navbar />
       <Routes>
         <Route path='/' element={<Index />} />

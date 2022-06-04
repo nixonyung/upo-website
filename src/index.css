@@ -15,5 +15,5 @@ html {
   background: black;
   color: white;
   font-family: 'Montserrat';
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
