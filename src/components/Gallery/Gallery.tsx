@@ -6,7 +6,7 @@ type GalleryProps = {
 
 export default function Gallery({ items }: GalleryProps) {
   return (
-    <div className='flex flex-wrap justify-around gap-6'>
+    <div className='lg:left-1/2 lg:-ml-[calc(50vw-15px)] relative flex flex-wrap lg:justify-around md:justify-between lg:w-[calc(100vw-30px)] gap-6'>
       {items.map((item) => (
         <GalleryItem {...item} key={item.heading} />
       ))}

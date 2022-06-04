@@ -6,7 +6,7 @@ type SecitonHeaderProps = {
 
 export default function SectionHeader({ children }: SecitonHeaderProps) {
   return (
-    <h2 className='font-Inter underline-offset-4 inline-block my-6 text-3xl underline uppercase'>
+    <h2 className='font-Inter underline-offset-4 lg:text-4xl inline-block mt-6 mb-12 text-3xl underline uppercase'>
       {children}
     </h2>
   )

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className='mt-20 mb-12'>
       <Section header='About UPO'>
-        <p className='font-Inter text-sm leading-9'>
+        <p className='font-Inter md:text-lg md:leading-10 lg:translate-x-5 text-sm leading-9 text-left'>
           UPO is a student-run orchestra under the Student Union of Hong Kong
           University of Science and Technology (HKUSTSU).
           <br />

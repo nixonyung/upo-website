@@ -9,7 +9,9 @@ type SectionProps = {
 
 export default function Section({ innerRef, header, children }: SectionProps) {
   return (
-    <section ref={innerRef} className='px-6 mx-auto my-20'>
+    <section
+      ref={innerRef}
+      className='max-w-3xl px-6 mx-auto my-20 text-left text-center'>
       <SectionHeader>{header}</SectionHeader>
       {children}
     </section>
