@@ -23,25 +23,25 @@ export default function Notification({
   return (
     <>
       <div
-        className='shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 overflow-clip md:mx-9 relative my-6 shadow-md cursor-pointer'
+        className='shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 overflow-clip relative my-6 shadow-md cursor-pointer'
         onClick={() => setModalOpened(true)}>
         <BackgroundImage src={gradientSVG} radius='lg'>
-          <div className='md:px-9 px-6 py-4 text-left'>
-            <div className='md:h-16 h-12 tracking-tighter'>
-              <h3 className='font-Mont drop-shadow-md md:text-3xl text-2xl tracking-wide text-white capitalize'>
+          <div className='md:px-9 px-5 py-4 text-left'>
+            <div className='w-11/12 tracking-tighter'>
+              <h3 className='font-Mont drop-shadow-md md:text-3xl md:tracking-wide text-2xl text-white capitalize'>
                 {heading}
               </h3>
             </div>
-            <div className=''>
-              <span className='font-Inter font-extralight text-md md:text-lg text-opacity-40 text-white'>
+            <div className='w-2/3 mt-6'>
+              <p className='font-Mont md:text-lg text-opacity-70 text-md font-lighter text-white'>
                 {subheading}
-              </span>
+              </p>
             </div>
           </div>
 
           <FontAwesomeIcon
             icon={faAngleRight}
-            className='bottom-3 right-4 absolute'
+            className='bottom-3 right-1 md:right-4 opacity-30 md:opacity-80 absolute'
             color='white'
             size='2x'
             fixedWidth
@@ -50,7 +50,7 @@ export default function Notification({
           {/* icon as overlay */}
           <FontAwesomeIcon
             icon={icon}
-            className='right-1/4 translate-x-2/3 rotate-12 opacity-30 absolute top-0'
+            className='right-1/4 translate-x-2/3 rotate-12 opacity-10 absolute top-0'
             color='white'
             size='9x'
             fixedWidth
@@ -63,12 +63,13 @@ export default function Notification({
         onClose={() => setModalOpened(false)}
         title={heading}
         classNames={{
-          modal: 'bg-slate-700 text-white pt-3 rounded-xl',
+          modal: 'bg-slate-800 text-white pt-3 rounded-xl',
           close: 'text-gray-400 hover:bg-gray-800 rounded-lg',
           title: 'font-Inter text-lg font-bold tracking-wider',
+          body: 'font-Inter',
         }}
         centered
-        overlayBlur={1}
+        overlayBlur={2}
         size='lg'
         transition='slide-up'
         transitionDuration={300}>
