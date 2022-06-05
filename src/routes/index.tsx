@@ -1,6 +1,8 @@
+import { faMasksTheater } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import Hero from '../components/Hero'
+import Notification from '../components/Notification'
 import { Section } from '../components/Section'
 
 export default function Index() {
@@ -24,11 +26,14 @@ export default function Index() {
     <>
       <Hero />
 
-      <Section innerRef={NewsRef} header='haha'>
-        <p>hahahaha</p>
+      <Section innerRef={NewsRef} header='News'>
+        <Notification
+          heading='Concert'
+          subheading='before 12th'
+          icon={faMasksTheater}>
+          haha can you see me
+        </Notification>
       </Section>
-
-      <div className='h-screen'></div>
     </>
   )
 }
