@@ -5,19 +5,19 @@ import { BackgroundImage, Modal } from '@mantine/core'
 import { useState } from 'react'
 import gradientSVG from '../images/gradient.svg'
 
-type NotificationProps = {
+type NewsItemProps = {
   heading: string
   subheading: string
   icon: IconProp
   children: React.ReactNode
 }
 
-export default function Notification({
+export default function NewsItem({
   heading,
   subheading,
   icon,
   children,
-}: NotificationProps) {
+}: NewsItemProps) {
   const [modalOpened, setModalOpened] = useState(false)
 
   return (

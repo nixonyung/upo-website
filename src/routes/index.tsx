@@ -6,7 +6,7 @@ import {
 import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import Hero from '../components/Hero'
-import Notification from '../components/Notification'
+import NewsItem from '../components/NewsItem'
 import { Section } from '../components/Section'
 
 export default function Index() {
@@ -31,7 +31,7 @@ export default function Index() {
       <Hero />
 
       <Section innerRef={NewsRef} header='News'>
-        <Notification
+        <NewsItem
           heading='Mini Concert - Player Recruitment'
           subheading='before 12 June'
           icon={faMasksTheater}>
@@ -63,9 +63,9 @@ export default function Index() {
           Deadline for registration: <b>12th June 2022</b>.
           <br />
           Please contact Summerloretta (98427158) for any questions.
-        </Notification>
+        </NewsItem>
 
-        <Notification
+        <NewsItem
           heading='Member Recruitment'
           subheading=''
           icon={faPeopleGroup}>
@@ -97,9 +97,9 @@ export default function Index() {
             send us an email
           </a>
           .
-        </Notification>
+        </NewsItem>
 
-        <Notification
+        <NewsItem
           heading='2021 Concert Review'
           subheading='Ready on our YouTube channel!'
           icon={faPlayCircle}>
@@ -125,7 +125,7 @@ export default function Index() {
             className='text-blue-400 underline'>
             Freshmen Concert 2021
           </a>
-        </Notification>
+        </NewsItem>
       </Section>
     </>
   )
