@@ -18,7 +18,6 @@ export default function Index() {
 
   // dealing with scrolling to News when the corresponding NavLink is clicked
   useEffect(() => {
-    console.log(NewsRef.current)
     if (location.hash === '') window.scrollTo({ top: 0, behavior: 'smooth' })
     else if (location.hash === '#news' && NewsRef.current != null)
       window.scrollTo({
@@ -134,7 +133,7 @@ export default function Index() {
       <Section header=''>
         <Card
           heading='About Us'
-          subheading='Know more about UPO and our cabinet'
+          subheading='Know more about UPO and our Executive Committee'
           image={cabGroupJPG}
           link='/about'
         />

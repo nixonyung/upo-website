@@ -42,7 +42,10 @@ export default function About() {
         </p>
       </Section>
 
-      <Section header='Cabinet Members'>
+      <Section header='Executive Committee'>
+        <p className='font-Inter md:text-lg md:leading-10 text-xs leading-9'>
+          Introducing VIVACE, Executive Committee of Session 2022-2023
+        </p>
         <Gallery items={cabinetInfo} squareModal />
       </Section>
 
