@@ -41,7 +41,7 @@ export default function About() {
       </Section>
 
       <Section header='Cabinet Members'>
-        <Gallery items={cabinetInfo} />
+        <Gallery items={cabinetInfo} squareModal />
       </Section>
 
       <Section header='Useful Links'>
