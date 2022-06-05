@@ -5,9 +5,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
+import Card from '../components/Card'
 import Hero from '../components/Hero'
 import NewsItem from '../components/NewsItem'
 import { Section } from '../components/Section'
+import orchJPG from '../images/orch.jpg'
 
 export default function Index() {
   const location = useLocation()
@@ -29,7 +31,6 @@ export default function Index() {
   return (
     <>
       <Hero />
-
       <Section innerRef={NewsRef} header='News'>
         <NewsItem
           heading='Mini Concert - Player Recruitment'
@@ -126,6 +127,21 @@ export default function Index() {
             Freshmen Concert 2021
           </a>
         </NewsItem>
+      </Section>
+
+      <div className='h-6'></div>
+      <Section header=''>
+        <Card
+          image={orchJPG}
+          heading='About Us'
+          subheading='Know more about UPO and our cabinet'
+        />
+
+        <Card
+          image={orchJPG}
+          heading='Past Concerts'
+          subheading='Know more about our past concerts'
+        />
       </Section>
     </>
   )

@@ -8,7 +8,7 @@ type GalleryItemProps = {
 
 export function GalleryItem({ image, heading, subheading }: GalleryItemProps) {
   return (
-    <div className='relative w-full md:w-[45%] lg:w-[30%] shadow-lg shadow-gray-400 '>
+    <div className='relative w-full md:w-[45%] lg:w-[30%] shadow-lg shadow-gray-400'>
       <AspectRatio ratio={1 / 1}>
         <Image src={image} />
       </AspectRatio>
