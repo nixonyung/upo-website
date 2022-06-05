@@ -36,10 +36,10 @@ export function GalleryItem({
   return (
     <>
       <div
-        className='relative w-full md:w-[45%] lg:w-[30%] shadow-lg shadow-gray-400 cursor-pointer'
+        className='relative w-full md:w-[45%] lg:w-[30%] shadow-md shadow-gray-400 cursor-pointer hover:shadow-lg hover:shadow-gray-400'
         onClick={() => setModalOpened(true)}>
         <AspectRatio ratio={1 / 1}>
-          <Image src={image} />
+          <img src={image} />
         </AspectRatio>
 
         <div className='left-1/2 bg-opacity-70 bottom-1/4 backdrop-blur-sm translate-y-2/3 absolute w-full px-6 py-6 text-center -translate-x-1/2 bg-gray-700'>
