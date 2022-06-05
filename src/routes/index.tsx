@@ -132,15 +132,17 @@ export default function Index() {
       <div className='h-6'></div>
       <Section header=''>
         <Card
-          image={orchJPG}
           heading='About Us'
           subheading='Know more about UPO and our cabinet'
+          image={orchJPG}
+          link='/about'
         />
 
         <Card
-          image={orchJPG}
           heading='Past Concerts'
           subheading='Know more about our past concerts'
+          image={orchJPG}
+          link='/concerts'
         />
       </Section>
     </>
