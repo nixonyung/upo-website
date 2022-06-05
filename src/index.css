@@ -17,3 +17,16 @@ html {
   font-family: 'Montserrat';
   /* scroll-behavior: smooth; */
 }
+
+#root {
+  position: relative;
+}
+
+#root::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -100;
+  opacity: 0.3;
+  background: fixed url('images/waterpipe.jpg');
+}

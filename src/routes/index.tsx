@@ -9,6 +9,7 @@ import Card from '../components/Card'
 import Hero from '../components/Hero'
 import NewsItem from '../components/NewsItem'
 import { Section } from '../components/Section'
+import cabGroupJPG from '../images/cab-group.jpg'
 import orchJPG from '../images/orch.jpg'
 
 export default function Index() {
@@ -134,7 +135,7 @@ export default function Index() {
         <Card
           heading='About Us'
           subheading='Know more about UPO and our cabinet'
-          image={orchJPG}
+          image={cabGroupJPG}
           link='/about'
         />
 

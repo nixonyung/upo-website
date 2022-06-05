@@ -1,4 +1,3 @@
-import { BackgroundImage } from '@mantine/core'
 import HeroImg from '../images/hero.jpg'
 
 export default function Hero() {
@@ -7,29 +6,25 @@ export default function Hero() {
   )
 
   return (
-    <section className='overflow-hidden'>
-      <BackgroundImage src={HeroImg} className='h-fit'>
-        <div className='h-96 place-items-center sm:gap-9 relative grid content-center gap-12'>
-          <h1 className='font-Mont lg:text-5xl relative text-3xl tracking-wider text-center text-white'>
-            University Philharmonic Orchestra
-          </h1>
-          <div className='flex items-center gap-3'>
-            <LineDecoration />
-            <span className='font-Mont text-opacity-80 lg:text-xl text-lg text-white'>
-              HKUSTSU
-            </span>
-            <LineDecoration />
-          </div>
+    <section className='h-96 place-items-center sm:gap-9 relative grid content-center gap-12 overflow-hidden'>
+      <div className='gradient-mask-b-70 -z-20 absolute inset-0'>
+        <img src={HeroImg} className='object-cover w-full h-full' />
+      </div>
+      <h1 className='font-Mont lg:text-5xl relative text-3xl tracking-wider text-center text-white'>
+        University Philharmonic Orchestra
+      </h1>
+      <div className='flex items-center gap-3'>
+        <LineDecoration />
+        <span className='font-Mont text-opacity-80 lg:text-xl text-lg text-white'>
+          HKUSTSU
+        </span>
+        <LineDecoration />
+      </div>
 
-          {/* musical clef overlay */}
-          <span className='lg:text-99xl text-9xl font-Mont -rotate-12 text-opacity-20 left-1/20 top-1/2 absolute text-white -translate-y-1/2 select-none'>
-            &#x1d11e;
-          </span>
-
-          {/* gradient overlay */}
-          <div className='bg-gradient-to-b from-transparent to-black absolute bottom-0 w-full h-24'></div>
-        </div>
-      </BackgroundImage>
+      {/* musical clef overlay */}
+      <span className='lg:text-99xl text-9xl font-Mont -rotate-12 text-opacity-20 left-1/20 top-1/2 absolute text-white -translate-y-1/2 select-none'>
+        &#x1d11e;
+      </span>
     </section>
   )
 }

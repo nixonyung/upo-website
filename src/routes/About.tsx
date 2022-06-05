@@ -14,6 +14,8 @@ import { Section } from '../components/Section'
 export default function About() {
   return (
     <>
+      <div className='h-12'></div>
+
       <Section header='About UPO'>
         <p className='font-Inter md:text-lg md:leading-10 text-sm leading-9 text-left'>
           UPO is a student-run orchestra under the Student Union of Hong Kong

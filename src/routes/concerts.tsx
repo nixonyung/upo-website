@@ -4,10 +4,12 @@ import concertInfo from '../concertInfo'
 
 export default function Concerts() {
   return (
-    <div>
+    <>
+      <div className='h-12'></div>
+
       <Section header='Past Concerts'>
         <Gallery items={concertInfo} />
       </Section>
-    </div>
+    </>
   )
 }
