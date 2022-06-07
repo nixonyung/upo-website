@@ -62,7 +62,7 @@ export default function About() {
               size='lg'
               className='mr-2'
             />
-            Consitution of UPO
+            Constitution of UPO
           </a>
           <a
             href='http://su.ust.hk/'

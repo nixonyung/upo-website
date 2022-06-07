@@ -20,7 +20,7 @@ export default function Navbar() {
         pathname === '/' && scroll.y < (lg ? 120 : 40)
           ? ''
           : 'backdrop-blur-lg bg-black bg-opacity-40'
-      } fixed inset-x-0 top-0 z-20 px-6 transition-all duration-300 ease-linear`}>
+      } fixed inset-x-0 top-0 z-40 px-6 transition-all duration-300 ease-linear`}>
       <div className='flex items-center justify-center h-16 max-w-5xl gap-3 mx-auto'>
         <StyledNavLogo />
 

@@ -7,13 +7,13 @@ export default function Hero() {
 
   return (
     <section className='h-96 place-items-center sm:gap-9 relative grid content-center gap-12 overflow-hidden'>
-      <div className='gradient-mask-b-70 -z-20 absolute inset-0'>
+      <div className='gradient-mask-b-70 absolute inset-0'>
         <img src={HeroImg} className='object-cover w-full h-full' />
       </div>
-      <h1 className='font-Mont lg:text-5xl relative text-3xl tracking-wider text-center text-white'>
+      <h1 className='font-Mont lg:text-5xl relative z-10 text-3xl tracking-wider text-center text-white'>
         University Philharmonic Orchestra
       </h1>
-      <div className='flex items-center gap-3'>
+      <div className='z-10 flex items-center gap-3'>
         <LineDecoration />
         <span className='font-Mont text-opacity-80 lg:text-xl text-lg text-white'>
           HKUSTSU
