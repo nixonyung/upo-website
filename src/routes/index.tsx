@@ -1,4 +1,6 @@
 import {
+  faChampagneGlasses,
+  faHandshake,
   faMasksTheater,
   faPeopleGroup,
   faPlayCircle,
@@ -32,6 +34,76 @@ export default function Index() {
     <>
       <Hero />
       <Section innerRef={NewsRef} header='News'>
+        <NewsItem
+          heading='Orientation Day'
+          subheading='before 15 August'
+          icon={faChampagneGlasses}>
+          Welcome to UST!
+          <br />
+          <br />
+          Join our orientation day, get along with your like-minded peers and
+          our members who are just as much of a music lover as you, and
+          experience an engaging prelude to your university life!
+          <br />
+          <br />
+          Sign up with the&nbsp;
+          <a
+            href='https://forms.gle/rUkiVUpE39YToSJk7'
+            target='_blank'
+            rel='noreferrer'
+            className='text-blue-400 underline'>
+            registration form
+          </a>
+          !
+          <br />
+          <br />
+          Details:
+          <br />
+          Date: 20 Aug, 2022
+          <br />
+          Time: 11:00 - 18:00
+          <br />
+          Venue: LG5 Multi-function Room
+          <br />
+          <br />
+          Deadline for registration: <b>15th August 2022</b>.
+          <br />
+          Please contact Ivan (61944458) or Summerloretta (98427158) for
+          enquiries.
+        </NewsItem>
+
+        <NewsItem
+          heading='Orientation Day Internal Recruitment'
+          subheading='before 1 August'
+          icon={faHandshake}>
+          UPO O-day is coming soon. If you would like to join in the fun and
+          help new freshmen enjoy the beginnings of their university life, be
+          sure to sign up with the&nbsp;
+          <a
+            href='https://forms.gle/B78zWVFc4xSMeREZ9'
+            target='_blank'
+            rel='noreferrer'
+            className='text-blue-400 underline'>
+            registration form
+          </a>
+          !
+          <br />
+          <br />
+          Details (for helpers):
+          <br />
+          Date: 20 Aug, 2022
+          <br />
+          Time: 10:00 - 18:30
+          <br />
+          Venue: LG5 Multi-function Room
+          <br />
+          <br />
+          Deadline for registration: <b>1st August 2022</b>.
+          <br />
+          Please contact Ivan (61944458) or Summerloretta (98427158) for
+          enquiries.
+        </NewsItem>
+
         <NewsItem
           heading='Mini Concert - Player Recruitment'
           subheading='before 12 June'
@@ -68,7 +140,7 @@ export default function Index() {
 
         <NewsItem
           heading='Member Recruitment'
-          subheading=''
+          subheading='Send us an email'
           icon={faPeopleGroup}>
           If you love participating in orchestra, and you want to share your
           enjoyment of playing music with others, just join us!

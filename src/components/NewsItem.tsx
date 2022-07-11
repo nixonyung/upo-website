@@ -23,7 +23,7 @@ export default function NewsItem({
   return (
     <>
       <div
-        className='shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 overflow-clip relative my-6 shadow-md cursor-pointer'
+        className='shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 my-9 relative overflow-hidden shadow-md cursor-pointer'
         onClick={() => setModalOpened(true)}>
         <BackgroundImage src={gradientSVG} radius='lg'>
           <div className='md:px-9 px-5 py-4 text-left'>
@@ -65,7 +65,7 @@ export default function NewsItem({
         classNames={{
           modal: 'bg-slate-800 text-white pt-3 rounded-xl',
           close: 'text-gray-400 hover:bg-gray-800 rounded-lg',
-          title: 'font-Inter text-lg font-bold tracking-wider',
+          title: 'font-Inter text-lg font-bold tracking-wider capitalize',
           body: 'font-Inter',
         }}
         centered
