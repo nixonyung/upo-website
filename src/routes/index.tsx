@@ -36,7 +36,13 @@ export default function Index() {
       <Section innerRef={NewsRef} header='News'>
         <NewsItem
           heading='Orientation Day'
-          subheading='before 15 August'
+          subheading={
+            <p>
+              On 20 August
+              <br />
+              Register before 19 August
+            </p>
+          }
           icon={faChampagneGlasses}>
           Welcome to UST!
           <br />
@@ -57,24 +63,32 @@ export default function Index() {
           !
           <br />
           <br />
-          Details:
+          <u>Details:</u>
           <br />
-          Date: 20 Aug, 2022
+          Date:&nbsp;&nbsp;&nbsp;&nbsp;20 Aug, 2022
           <br />
-          Time: 11:00 - 18:00
+          Time:&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 18:00
           <br />
-          Venue: LG5 Multi-function Room
+          Venue:&nbsp;&nbsp;LG5 Multi-function Room
+          <br />
+          Fee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30
           <br />
           <br />
-          Deadline for registration: <b>15th August 2022</b>.
+          Deadline for registration: <b>19th August 2022</b>.
           <br />
           Please contact Ivan (61944458) or Summerloretta (98427158) for
           enquiries.
         </NewsItem>
 
         <NewsItem
-          heading='Orientation Day Internal Recruitment'
-          subheading='before 1 August'
+          heading='Orientation Day Member Recruitment'
+          subheading={
+            <p>
+              On 20 August
+              <br />
+              Register before 1 August
+            </p>
+          }
           icon={faHandshake}>
           UPO O-day is coming soon. If you would like to join in the fun and
           help new freshmen enjoy the beginnings of their university life, be
@@ -89,13 +103,15 @@ export default function Index() {
           !
           <br />
           <br />
-          Details (for helpers):
+          <u>Details (for UPO members):</u>
           <br />
-          Date: 20 Aug, 2022
+          Date:&nbsp;&nbsp;&nbsp;&nbsp;20 Aug, 2022
           <br />
-          Time: 10:00 - 18:30
+          Time:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 18:30
           <br />
-          Venue: LG5 Multi-function Room
+          Venue:&nbsp;&nbsp;LG5 Multi-function Room
+          <br />
+          Fee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free of charge
           <br />
           <br />
           Deadline for registration: <b>1st August 2022</b>.
@@ -106,34 +122,24 @@ export default function Index() {
 
         <NewsItem
           heading='Mini Concert - Player Recruitment'
-          subheading='before 12 June'
+          subheading='CLOSED'
           icon={faMasksTheater}>
           Our brand new activity featuring solos, duets, and ensembles.
           <br />
           Pianists and non-members are also welcome!
           <br />
           <br />
-          Details:
+          <u>Details:</u>
           <br />
-          Date: TBC (between late September and early October)
+          Date:&nbsp;&nbsp;&nbsp;&nbsp;TBC (between late September and early
+          October)
           <br />
-          Time: 7:00 - 8:00 pm (TBC)
+          Time:&nbsp;&nbsp;&nbsp;&nbsp;7:00 - 8:00 pm (TBC)
           <br />
-          Venue: CMA Lecture Theatre (LT-L)
-          <br />
-          <br />
-          Quickly fill in the&nbsp;
-          <a
-            href='https://forms.gle/ukmCsLwnKHdxoUoU9'
-            target='_blank'
-            rel='noreferrer'
-            className='text-blue-400 underline'>
-            registration form
-          </a>
-          !
+          Venue:&nbsp;&nbsp;CMA Lecture Theatre (LT-L)
           <br />
           <br />
-          Deadline for registration: <b>12th June 2022</b>.
+          Deadline for registration: <del>12th June 2022</del> <b>CLOSED</b>.
           <br />
           Please contact Summerloretta (98427158) for any questions.
         </NewsItem>
