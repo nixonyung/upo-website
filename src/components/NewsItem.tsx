@@ -7,7 +7,7 @@ import gradientSVG from '../images/gradient.svg'
 
 type NewsItemProps = {
   heading: string
-  subheading: string
+  subheading: React.ReactNode
   icon: IconProp
   children: React.ReactNode
 }
