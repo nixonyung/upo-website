@@ -6,7 +6,7 @@ export default function Hero() {
   )
 
   return (
-    <section className='h-96 place-items-center sm:gap-9 relative grid content-center gap-12 overflow-hidden'>
+    <section className='lg:h-96 md:h-72 h-96 place-items-center sm:gap-9 relative grid content-center gap-12 overflow-hidden'>
       <div className='gradient-mask-b-70 absolute inset-0'>
         <img src={HeroImg} className='object-cover w-full h-full' />
       </div>
