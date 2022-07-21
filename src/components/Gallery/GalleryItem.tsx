@@ -42,7 +42,7 @@ export function GalleryItem({
           <img src={image} />
         </AspectRatio>
 
-        <div className='left-1/2 bg-opacity-70 bottom-1/4 backdrop-blur-sm translate-y-2/3 absolute w-full px-6 py-6 text-center -translate-x-1/2 bg-gray-700'>
+        <div className='left-1/2 bg-opacity-70 bottom-1/4 backdrop-blur-sm absolute w-full px-6 py-3 text-center -translate-x-1/2 translate-y-16 bg-gray-700'>
           <span className='text-lg font-bold'>{heading}</span>
           <br />
           <span className='text-sm'>{subheading}</span>

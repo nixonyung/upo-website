@@ -146,7 +146,7 @@ export default function Index() {
 
         <NewsItem
           heading='Member Recruitment'
-          subheading='Send us an email'
+          subheading='Fill in the application form'
           icon={faPeopleGroup}>
           If you love participating in orchestra, and you want to share your
           enjoyment of playing music with others, just join us!
