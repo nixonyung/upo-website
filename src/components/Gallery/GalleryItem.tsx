@@ -7,6 +7,7 @@ type GalleryItemProps = {
   heading: string
   subheading?: string | null
   squareModal?: boolean | null
+  firstAtCenter?: boolean
 }
 
 export function GalleryItem({
@@ -14,6 +15,7 @@ export function GalleryItem({
   heading,
   subheading,
   squareModal,
+  firstAtCenter,
 }: GalleryItemProps) {
   const [modalOpened, setModalOpened] = useState(false)
 
@@ -36,7 +38,9 @@ export function GalleryItem({
   return (
     <>
       <div
-        className='relative w-full md:w-[45%] lg:w-[30%] shadow-md shadow-gray-400 cursor-pointer hover:shadow-lg hover:shadow-gray-400'
+        className={`${
+          firstAtCenter ?? false ? 'lg:order-first' : ''
+        } relative w-full md:w-[45%] lg:w-[30%] shadow-md shadow-gray-400 cursor-pointer hover:shadow-lg hover:shadow-gray-400`}
         onClick={() => setModalOpened(true)}>
         <AspectRatio ratio={1 / 1}>
           <img src={image} />

@@ -46,7 +46,7 @@ export default function About() {
         <p className='font-Inter md:text-lg md:leading-10 text-xs leading-9'>
           Introducing VIVACE, Executive Committee of Session 2022-2023
         </p>
-        <Gallery items={cabinetInfo} squareModal />
+        <Gallery items={cabinetInfo} squareModal firstAtCenter />
       </Section>
 
       <Section header='Useful Links'>
