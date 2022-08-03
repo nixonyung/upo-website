@@ -1,39 +1,35 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { BackgroundImage, Modal } from '@mantine/core'
-import { useState } from 'react'
-import gradientSVG from '../images/gradient.svg'
+import {IconProp} from '@fortawesome/fontawesome-svg-core';
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {BackgroundImage, Modal} from '@mantine/core';
+import {useState} from 'react';
+import gradientSVG from '../images/gradient.svg';
 
 type NewsItemProps = {
-  heading: string
-  subheading: React.ReactNode
-  icon: IconProp
-  children: React.ReactNode
-}
+  heading: string;
+  subheading: React.ReactNode;
+  icon: IconProp;
+  children: React.ReactNode;
+};
 
-export default function NewsItem({
-  heading,
-  subheading,
-  icon,
-  children,
-}: NewsItemProps) {
-  const [modalOpened, setModalOpened] = useState(false)
+export default function NewsItem({heading, subheading, icon, children}: NewsItemProps) {
+  const [modalOpened, setModalOpened] = useState(false);
 
   return (
     <>
       <div
-        className='shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 my-9 relative overflow-hidden shadow-md cursor-pointer'
-        onClick={() => setModalOpened(true)}>
-        <BackgroundImage src={gradientSVG} radius='lg'>
-          <div className='md:px-9 px-5 py-4 text-left'>
-            <div className='w-11/12 tracking-tighter'>
-              <h3 className='font-Mont drop-shadow-md md:text-3xl md:tracking-wide text-2xl text-white capitalize'>
+        className="shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 my-9 relative overflow-hidden shadow-md cursor-pointer"
+        onClick={() => setModalOpened(true)}
+      >
+        <BackgroundImage src={gradientSVG} radius="lg">
+          <div className="md:px-9 px-5 py-4 text-left">
+            <div className="w-11/12 tracking-tighter">
+              <h3 className="font-Mont drop-shadow-md md:text-3xl md:tracking-wide text-2xl text-white capitalize">
                 {heading}
               </h3>
             </div>
-            <div className='w-2/3 mt-6'>
-              <p className='font-Mont md:text-lg text-opacity-70 text-md font-lighter text-white'>
+            <div className="w-2/3 mt-6">
+              <p className="font-Mont md:text-lg text-opacity-70 text-md font-lighter text-white">
                 {subheading}
               </p>
             </div>
@@ -41,18 +37,18 @@ export default function NewsItem({
 
           <FontAwesomeIcon
             icon={faAngleRight}
-            className='bottom-3 right-1 md:right-4 opacity-30 md:opacity-80 absolute'
-            color='white'
-            size='2x'
+            className="bottom-3 right-1 md:right-4 opacity-30 md:opacity-80 absolute"
+            color="white"
+            size="2x"
             fixedWidth
           />
 
           {/* icon as overlay */}
           <FontAwesomeIcon
             icon={icon}
-            className='right-1/4 translate-x-2/3 rotate-12 opacity-10 absolute top-0'
-            color='white'
-            size='9x'
+            className="right-1/4 translate-x-2/3 rotate-12 opacity-10 absolute top-0"
+            color="white"
+            size="9x"
             fixedWidth
           />
         </BackgroundImage>
@@ -70,11 +66,12 @@ export default function NewsItem({
         }}
         centered
         overlayBlur={2}
-        size='lg'
-        transition='slide-up'
-        transitionDuration={300}>
+        size="lg"
+        transition="slide-up"
+        transitionDuration={300}
+      >
         {children}
       </Modal>
     </>
-  )
+  );
 }

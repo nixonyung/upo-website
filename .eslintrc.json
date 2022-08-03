@@ -1,38 +1,23 @@
 {
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-
   "env": {
-    "browser": true
-    // "jest": true
+    "browser": true,
+    "es2021": true
   },
-
-  "plugins": ["react", "react-hooks", "prettier"],
   "extends": [
     "eslint:recommended",
-    "standard-with-typescript",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "airbnb-typescript",
+    "plugin:prettier/recommended"
   ],
-
-  "rules": {
-    "jsx-quotes": ["error", "prefer-single"],
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/triple-slash-reference": "off"
-  },
-
-  "settings": {
-    "react": {
-      "version": "detect"
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "import/resolver": {
-      "typescript": {}
-    }
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-
-  "ignorePatterns": ["tailwind.config.js"]
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {}
 }

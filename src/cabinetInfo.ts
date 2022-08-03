@@ -1,10 +1,10 @@
-import ernestJPG from './images/exco/ernest.jpg'
-import harrisonJPG from './images/exco/harrison.jpg'
-import ivanJPG from './images/exco/ivan.jpg'
-import jaimeJPG from './images/exco/jaime.jpg'
-import summerJPG from './images/exco/summer.jpg'
-import summerlorettaJPG from './images/exco/summerloretta.jpg'
-import williamJPG from './images/exco/william.jpg'
+import ernestJPG from './images/exco/ernest.jpg';
+import harrisonJPG from './images/exco/harrison.jpg';
+import ivanJPG from './images/exco/ivan.jpg';
+import jaimeJPG from './images/exco/jaime.jpg';
+import summerJPG from './images/exco/summer.jpg';
+import summerlorettaJPG from './images/exco/summerloretta.jpg';
+import williamJPG from './images/exco/william.jpg';
 
 const cabinetInfo = [
   {
@@ -42,6 +42,6 @@ const cabinetInfo = [
     image: williamJPG,
     subheading: 'Instrumental Secretary',
   },
-]
+];
 
-export default cabinetInfo
+export default cabinetInfo;
