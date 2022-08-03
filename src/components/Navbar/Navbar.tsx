@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="flex items-center justify-center h-16 max-w-5xl gap-3 mx-auto">
         <StyledNavLogo />
 
-        <span className="flex-grow"></span>
+        <span className="flex-grow" />
 
         {lg ? (
           <>

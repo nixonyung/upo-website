@@ -1,11 +1,11 @@
-import {Gallery} from '../components/Gallery';
-import {Section} from '../components/Section';
+import Gallery from '../components/Gallery';
+import Section from '../components/Section';
 import concertInfo from '../concertInfo';
 
 export default function Concerts() {
   return (
     <>
-      <div className="h-12"></div>
+      <div className="h-12" />
 
       <Section header="Past Concerts">
         <Gallery items={concertInfo} />

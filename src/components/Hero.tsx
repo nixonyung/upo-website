@@ -1,14 +1,16 @@
 import HeroImg from '../images/hero.jpg';
 
-export default function Hero() {
-  const LineDecoration = () => (
-    <span className="lg:w-64 md:w-44 inline-block w-20 border-b-2 border-white border-opacity-50 border-solid"></span>
+function LineDecoration() {
+  return (
+    <span className="lg:w-64 md:w-44 inline-block w-20 border-b-2 border-white border-opacity-50 border-solid" />
   );
+}
 
+export default function Hero() {
   return (
     <section className="lg:h-96 md:h-72 h-96 place-items-center sm:gap-9 relative grid content-center gap-12 overflow-hidden">
       <div className="gradient-mask-b-70 absolute inset-0">
-        <img src={HeroImg} className="object-cover w-full h-full" />
+        <img src={HeroImg} alt="UPO" className="object-cover w-full h-full" />
       </div>
       <h1 className="font-Mont lg:text-5xl relative z-10 text-3xl tracking-wider text-center text-white">
         University Philharmonic Orchestra

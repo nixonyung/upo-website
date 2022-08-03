@@ -18,8 +18,13 @@ export default function NewsItem({heading, subheading, icon, children}: NewsItem
   return (
     <>
       <div
+        role="button"
+        tabIndex={0}
         className="shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 my-9 relative overflow-hidden shadow-md cursor-pointer"
         onClick={() => setModalOpened(true)}
+        onKeyPress={e => {
+          if (e.key === 'Enter') setModalOpened(true);
+        }}
       >
         <BackgroundImage src={gradientSVG} radius="lg">
           <div className="md:px-9 px-5 py-4 text-left">

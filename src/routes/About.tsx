@@ -7,14 +7,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import cabinetInfo from '../cabinetInfo';
-import {Gallery} from '../components/Gallery';
-import {Section} from '../components/Section';
+import Gallery from '../components/Gallery';
+import Section from '../components/Section';
 // import constitutionPDF from '../static/constitution.pdf'
 
 export default function About() {
   return (
     <>
-      <div className="h-12"></div>
+      <div className="h-12" />
 
       <Section header="About UPO">
         <p className="font-Inter md:text-lg md:leading-10 text-sm leading-9 text-left">
@@ -50,7 +50,7 @@ export default function About() {
       <Section header="Useful Links">
         <div className="w-fit flex flex-col items-start gap-3 mx-auto">
           <a
-            href={process.env.PUBLIC_URL + '/constitution.pdf'}
+            href={`${process.env.PUBLIC_URL}/constitution.pdf`}
             className="md:text-lg text-blue-400 underline"
             target="_blank"
             rel="noreferrer"

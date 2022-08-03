@@ -10,7 +10,7 @@ import {useLocation} from 'react-router-dom';
 import Card from '../components/Card';
 import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
-import {Section} from '../components/Section';
+import Section from '../components/Section';
 import cabGroupJPG from '../images/cab-group.jpg';
 import orchJPG from '../images/orch.jpg';
 
@@ -213,7 +213,7 @@ export default function Index() {
         </NewsItem>
       </Section>
 
-      <div className="h-6"></div>
+      <div className="h-6" />
       <Section header="">
         <Card
           heading="About Us"

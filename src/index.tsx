@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom';
 import Footer from './components/Footer';
-import {Navbar} from './components/Navbar';
+import Navbar from './components/Navbar';
 import './index.css';
 import About from './routes/About';
 import Concerts from './routes/Concerts';

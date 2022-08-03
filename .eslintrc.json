@@ -7,17 +7,24 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "airbnb/hooks",
     "airbnb-typescript",
     "plugin:prettier/recommended"
   ],
+  "ignorePatterns": ["*.config.js"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": "latest",
+    "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": {}
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0
+  }
 }
