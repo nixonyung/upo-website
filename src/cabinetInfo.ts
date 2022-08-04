@@ -1,45 +1,45 @@
-import ernestJPG from './images/exco/ernest.jpg';
-import harrisonJPG from './images/exco/harrison.jpg';
-import ivanJPG from './images/exco/ivan.jpg';
-import jaimeJPG from './images/exco/jaime.jpg';
-import summerJPG from './images/exco/summer.jpg';
-import summerlorettaJPG from './images/exco/summerloretta.jpg';
-import williamJPG from './images/exco/william.jpg';
+import ernest from './images/exco/ernest.webp';
+import harrison from './images/exco/harrison.webp';
+import ivan from './images/exco/ivan.webp';
+import jaime from './images/exco/jaime.webp';
+import summer from './images/exco/summer.webp';
+import summerloretta from './images/exco/summerloretta.webp';
+import william from './images/exco/william.webp';
 
 const cabinetInfo = [
   {
     heading: 'Summer Vong',
-    image: summerJPG,
+    image: summer,
     subheading: 'President',
   },
   {
     heading: 'Jaime Yan',
-    image: jaimeJPG,
+    image: jaime,
     subheading: 'Internal Vice-President',
   },
   {
     heading: 'Summerloretta Leung',
-    image: summerlorettaJPG,
+    image: summerloretta,
     subheading: 'External Vice-President',
   },
   {
     heading: 'Harrison Wong',
-    image: harrisonJPG,
+    image: harrison,
     subheading: 'Financial Secretary',
   },
   {
     heading: 'Ivan Kwan',
-    image: ivanJPG,
+    image: ivan,
     subheading: 'General Secretary',
   },
   {
     heading: 'Ernest Wong',
-    image: ernestJPG,
+    image: ernest,
     subheading: 'Promotion Secretary',
   },
   {
     heading: 'William Wong',
-    image: williamJPG,
+    image: william,
     subheading: 'Instrumental Secretary',
   },
 ];

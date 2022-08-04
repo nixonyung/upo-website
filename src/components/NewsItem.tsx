@@ -20,7 +20,7 @@ export default function NewsItem({heading, subheading, icon, children}: NewsItem
       <div
         role="button"
         tabIndex={0}
-        className="shadow-gray-400 rounded-3xl hover:shadow-lg hover:shadow-gray-400 my-9 relative overflow-hidden shadow-md cursor-pointer"
+        className=" rounded-3xl my-9 relative overflow-hidden cursor-pointer hover:scale-105 transition-transform"
         onClick={() => setModalOpened(true)}
         onKeyPress={e => {
           if (e.key === 'Enter') setModalOpened(true);

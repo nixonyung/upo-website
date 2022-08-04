@@ -1,4 +1,4 @@
-import HeroImg from '../images/hero.jpg';
+import HeroImg from '../images/hero.webp';
 
 function LineDecoration() {
   return (

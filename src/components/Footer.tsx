@@ -13,12 +13,24 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <ActionIcon size="xl" radius="xl" variant="outline" className="hover:text-white">
+            <ActionIcon
+              size="xl"
+              radius="xl"
+              variant="outline"
+              className="hover:text-white"
+              aria-label="Our Facebook"
+            >
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
             </ActionIcon>
           </a>
           <a href="https://www.instagram.com/upo_hkustsu/" target="_blank" rel="noreferrer">
-            <ActionIcon size="xl" radius="xl" variant="outline" className="hover:text-white">
+            <ActionIcon
+              size="xl"
+              radius="xl"
+              variant="outline"
+              className="hover:text-white"
+              aria-label="Our Instagram"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </ActionIcon>
           </a>
@@ -27,12 +39,24 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <ActionIcon size="xl" radius="xl" variant="outline" className="hover:text-white">
+            <ActionIcon
+              size="xl"
+              radius="xl"
+              variant="outline"
+              className="hover:text-white"
+              aria-label="Our YouTube"
+            >
               <FontAwesomeIcon icon={faYoutube} size="lg" />
             </ActionIcon>
           </a>
           <a href="mailto:su_upo@connect.ust.hk" target="_blank" rel="noreferrer">
-            <ActionIcon size="xl" radius="xl" variant="outline" className="hover:text-white">
+            <ActionIcon
+              size="xl"
+              radius="xl"
+              variant="outline"
+              className="hover:text-white"
+              aria-label="Our mailing address"
+            >
               <FontAwesomeIcon icon={faEnvelope} size="lg" />
             </ActionIcon>
           </a>

@@ -20,12 +20,12 @@ export default function Navbar() {
         pathname === '/' && scroll.y < (lg ? 120 : 40)
           ? ''
           : 'backdrop-blur-lg bg-black bg-opacity-40'
-      } fixed inset-x-0 top-0 z-40 px-6 transition-all duration-300 ease-linear`}
+      } fixed inset-x-0 top-0 z-40 px-6 transition-all duration-300 ease-linear flex justify-center`}
     >
-      <div className="flex items-center justify-center h-16 max-w-5xl gap-3 mx-auto">
+      <div className="flex items-center justify-center h-16 w-full max-w-5xl gap-3 md:mx-6">
         <StyledNavLogo />
 
-        <span className="flex-grow" />
+        <div className="flex-grow" />
 
         {lg ? (
           <>
@@ -42,6 +42,7 @@ export default function Navbar() {
             color="gray"
             onClick={() => setMobileNavOpened(true)}
             className="z-100"
+            aria-label="Navbar toggler"
           >
             <FontAwesomeIcon icon={faBars} />
           </ActionIcon>

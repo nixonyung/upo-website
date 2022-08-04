@@ -11,8 +11,8 @@ import Card from '../components/Card';
 import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
 import Section from '../components/Section';
-import cabGroupJPG from '../images/cab-group.jpg';
-import orchJPG from '../images/orch.jpg';
+import cabGroupJPG from '../images/cab-group.webp';
+import orchJPG from '../images/orch.webp';
 
 export default function Index() {
   const location = useLocation();
