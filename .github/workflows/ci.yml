@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  - push
+
+jobs:
+  Check-Lint-and-Format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Using pnpm v7
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check syntax and lint
+        run: pnpm check:all
