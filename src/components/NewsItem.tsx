@@ -34,9 +34,9 @@ export default function NewsItem({heading, subheading, icon, children}: NewsItem
               </h3>
             </div>
             <div className="w-2/3 mt-6">
-              <p className="font-Mont md:text-lg text-opacity-70 text-md font-lighter text-white">
+              <div className="font-Mont md:text-lg text-opacity-70 text-md font-lighter text-white">
                 {subheading}
-              </p>
+              </div>
             </div>
           </div>
 
