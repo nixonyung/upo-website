@@ -1,10 +1,10 @@
 import {
-  faChampagneGlasses,
-  faHandshake,
   faMasksTheater,
+  faMusic,
   faPeopleGroup,
   faPlayCircle,
 } from '@fortawesome/free-solid-svg-icons';
+import {Image} from '@mantine/core';
 import {useEffect, useRef} from 'react';
 import {useLocation} from 'react-router-dom';
 import Card from '../components/Card';
@@ -12,6 +12,8 @@ import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
 import Section from '../components/Section';
 import cabGroupJPG from '../images/cab-group.webp';
+import jointUConcertJpg from '../images/news-JointUConcert.jpg';
+import miniConcertPng from '../images/news-MiniConcert.png';
 import orchJPG from '../images/orch.webp';
 
 export default function Index() {
@@ -34,90 +36,74 @@ export default function Index() {
       <Hero />
       <Section innerRef={NewsRef} header="News">
         <NewsItem
-          heading="Orientation Day"
-          subheading={
-            <p>
-              On 20 August
-              <br />
-              Register before 19 August
-            </p>
-          }
-          icon={faChampagneGlasses}
+          heading="Joint University Performance 2022"
+          subheading={<p>Show on 6, 7 September</p>}
+          icon={faMusic}
         >
-          Welcome to UST!
+          <Image src={jointUConcertJpg} width={300} />
+          <br />
+          To mark the beginning of the new academic year, UPO of HKU, HKUSTSU and PolyU SAOPhil
+          proudly present Joint University Performance 2022. This concert will present various forms
+          of ensembles and a wide range of music, from classical to video game pieces. It does not
+          matter if you are a musician or if you have not listened to orchestral music before, you
+          are cordially invited to join this musical journey!
           <br />
           <br />
-          Join our orientation day, get along with your like-minded peers and our members who are
-          just as much of a music lover as you, and experience an engaging prelude to your
-          university life!
+          Details of the Joint University Performance 2022 are as follows:
+          <br />
+          Date: &nbsp;&nbsp;&nbsp;6/9/2022, 7/9/2022
+          <br />
+          Time: &nbsp;&nbsp;&nbsp;20:00-22:00 (for both days)
+          <br />
+          Venue: &nbsp;Y-Theatre, LG-1, Youth Square
+          <br />
+          Price: &nbsp;&nbsp;&nbsp;Free of charge, free seating
           <br />
           <br />
-          Sign up with the&nbsp;
+          To reserve tickets, please fill in this Google form:&nbsp;
           <a
-            href="https://forms.gle/rUkiVUpE39YToSJk7"
+            href="https://forms.gle/WZv76bmnikDtYfQV6"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 underline"
           >
-            registration form
+            https://forms.gle/WZv76bmnikDtYfQV6
           </a>
-          !
           <br />
           <br />
-          <u>Details:</u>
+          Guest and Student Conductors:
+          <ul className="list-disc list-inside">
+            <li>Mr Dicky Cheng</li>
+            <li>Mr Kelvin Wan</li>
+            <li>Mr Kevin Wong</li>
+            <li>Mr Winson Wong</li>
+          </ul>
           <br />
-          Date:&nbsp;&nbsp;&nbsp;&nbsp;20 Aug, 2022
+          Day 1 (6/9/2022) Programme Highlights:
+          <ul className="list-disc list-inside">
+            <li>Prokofiev Symphony No. 1 (1st Movement)</li>
+            <li>Britten Aria Italiana</li>
+            <li>A Song for Japan (Trumpet Quintet)</li>
+          </ul>
           <br />
-          Time:&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 18:00
+          Day 2 (7/9/2022) Programme Highlights:
+          <ul className="list-disc list-inside">
+            <li>Seventh Night of July</li>
+            <li>Mahler Symphony No. 10 (1st Movement)</li>
+            <li>Mozart Divertimento in D (String Quartet)</li>
+          </ul>
           <br />
-          Venue:&nbsp;&nbsp;LG5 Multi-function Room
-          <br />
-          Fee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30
-          <br />
-          <br />
-          Deadline for registration: <b>19th August 2022</b>.
-          <br />
-          Please contact Ivan (61944458) or Summerloretta (98427158) for enquiries.
-        </NewsItem>
-
-        <NewsItem
-          heading="Orientation Day Member Recruitment"
-          subheading={
-            <p>
-              On 20 August
-              <br />
-              Register before 1 August
-            </p>
-          }
-          icon={faHandshake}
-        >
-          UPO O-day is coming soon. If you would like to join in the fun and help new freshmen enjoy
-          the beginnings of their university life, be sure to sign up with the&nbsp;
+          For enquiries, please feel free to contact Jervis at 54075314. Email enquiries are also
+          available at&nbsp;
           <a
-            href="https://forms.gle/B78zWVFc4xSMeREZ9"
+            href="mailto:jointuniorchestra@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 underline"
           >
-            registration form
+            jointuniorchestra@gmail.com
           </a>
-          !
-          <br />
-          <br />
-          <u>Details (for UPO members):</u>
-          <br />
-          Date:&nbsp;&nbsp;&nbsp;&nbsp;20 Aug, 2022
-          <br />
-          Time:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 18:30
-          <br />
-          Venue:&nbsp;&nbsp;LG5 Multi-function Room
-          <br />
-          Fee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free of charge
-          <br />
-          <br />
-          Deadline for registration: <b>1st August 2022</b>.
-          <br />
-          Please contact Ivan (61944458) or Summerloretta (98427158) for enquiries.
+          .
         </NewsItem>
 
         <NewsItem
@@ -125,6 +111,8 @@ export default function Index() {
           subheading="CLOSED"
           icon={faMasksTheater}
         >
+          <Image src={miniConcertPng} width={300} />
+          <br />
           Our brand new activity featuring solos, duets, and ensembles.
           <br />
           Pianists and non-members are also welcome!

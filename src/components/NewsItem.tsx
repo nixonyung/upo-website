@@ -70,6 +70,7 @@ export default function NewsItem({heading, subheading, icon, children}: NewsItem
           body: 'font-Inter',
         }}
         centered
+        overflow="inside"
         overlayBlur={2}
         size="lg"
         transition="slide-up"
