@@ -106,30 +106,22 @@ export default function Index() {
           .
         </NewsItem>
 
-        <NewsItem
-          heading="Mini Concert - Player Recruitment"
-          subheading="CLOSED"
-          icon={faMasksTheater}
-        >
+        <NewsItem heading="Mini Concert" subheading="Show on 5 October" icon={faMasksTheater}>
           <Image src={miniConcertPng} width={300} />
           <br />
           Our brand new activity featuring solos, duets, and ensembles.
           <br />
-          Pianists and non-members are also welcome!
-          <br />
           <br />
           <u>Details:</u>
           <br />
-          Date:&nbsp;&nbsp;&nbsp;&nbsp;TBC (between late September and early October)
+          Date:&nbsp;&nbsp;&nbsp;&nbsp;5/10/2022
           <br />
-          Time:&nbsp;&nbsp;&nbsp;&nbsp;7:00 - 8:00 pm (TBC)
+          Time:&nbsp;&nbsp;&nbsp;&nbsp;19:00-21:00
           <br />
-          Venue:&nbsp;&nbsp;CMA Lecture Theatre (LT-L)
+          Venue:&nbsp;&nbsp;Main Hall, Shaw Auditorium
           <br />
           <br />
-          Deadline for registration: <del>12th June 2022</del> <b>CLOSED</b>.
-          <br />
-          Please contact Summerloretta (98427158) for any questions.
+          Please contact Summerloretta (98427158) for any enquiries.
         </NewsItem>
 
         <NewsItem
