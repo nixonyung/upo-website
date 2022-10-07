@@ -64,15 +64,15 @@ export default function NewsItem({heading, subheading, icon, children}: NewsItem
         onClose={() => setModalOpened(false)}
         title={heading}
         classNames={{
-          modal: 'bg-slate-800 text-white pt-3 rounded-xl',
+          modal: 'bg-slate-800 text-white m-1 p-6 rounded-xl',
           close: 'text-gray-400 hover:bg-gray-800 rounded-lg',
           title: 'font-Inter text-lg font-bold tracking-wider capitalize',
-          body: 'font-Inter',
+          body: 'pr-6 font-Inter',
         }}
         centered
         overflow="inside"
         overlayBlur={2}
-        size="lg"
+        size="1080px"
         transition="slide-up"
         transitionDuration={300}
       >
