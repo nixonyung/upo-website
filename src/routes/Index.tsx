@@ -12,6 +12,7 @@ import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
 import Section from '../components/Section';
 import cabGroupWebp from '../images/cab-group.webp';
+import miniConcertPng from '../images/news-MiniConcert.png';
 import mvpPng from '../images/news-MVP.png';
 import subcomPng from '../images/news-Subcom.png';
 import orchWebp from '../images/orch.webp';
@@ -35,6 +36,43 @@ export default function Index() {
     <>
       <Hero />
       <Section innerRef={NewsRef} header="News">
+        <NewsItem
+          heading="Mini Concert"
+          subheading={<p>Register on or before 9 November</p>}
+          icon={faChampagneGlasses}
+        >
+          <Image src={miniConcertPng} width={350} />
+          <br />
+          Have you watched our Mini Concert in Oct? Wish you could be the one in the spotlight? No
+          problem! The 2nd Mini Concert will be held in Feb, don&apos;t hesitate and grab the
+          opportunity to showcase your musical talents.
+          <br />
+          <br />
+          Details:
+          <ul className="list-inside list-disc">
+            <li>Concert Date: Early February</li>
+            <li>Time: TBC (likely 7-8 pm / 8-9 pm)</li>
+            <li>Venue: HKUST Shaw Auditorium</li>
+            <li>Preferred Repertoire: 1. Ensembles 2. Solos</li>
+          </ul>
+          <br />
+          Application Deadline: Nov 9, 2022
+          <br />
+          Click&nbsp;
+          <a
+            href="https://forms.gle/afZ36pGoaQA2rGrG7"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-400 underline"
+          >
+            here
+          </a>
+          &nbsp;for application.
+          <br />
+          <br />
+          Should you have any enquiries, please feel free to contact Summerloretta on 98427158.
+        </NewsItem>
+
         <NewsItem
           heading="Subcommittee Function"
           subheading={<p>Apply before 23 October</p>}
@@ -61,7 +99,7 @@ export default function Index() {
           <br />
           Click&nbsp;
           <a
-            href="https://docs.google.com/forms/d/1_DOksAmpaCYd4Rj1IcNNrHkiQ9ZLjF_SzdnE_j1hozQ/edit?chromeless=1"
+            href="https://docs.google.com/forms/d/1_DOksAmpaCYd4Rj1IcNNrHkiQ9ZLjF_SzdnE_j1hozQ"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 underline"
@@ -175,7 +213,7 @@ export default function Index() {
             rel="noreferrer"
             className="text-blue-400 underline"
           >
-            Promenade Concert
+            Freshmen Concert 2021
           </a>
           <br />
           <span className="select-none">&#x2022;&nbsp;</span>
@@ -185,7 +223,7 @@ export default function Index() {
             rel="noreferrer"
             className="text-blue-400 underline"
           >
-            Freshmen Concert 2021
+            Promenade Concert
           </a>
         </NewsItem>
       </Section>
