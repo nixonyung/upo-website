@@ -14,7 +14,6 @@ import Section from '../components/Section';
 import cabGroupWebp from '../images/cab-group.webp';
 import miniConcertPng from '../images/news-MiniConcert.png';
 import mvpPng from '../images/news-MVP.png';
-import subcomPng from '../images/news-Subcom.png';
 import orchWebp from '../images/orch.webp';
 
 export default function Index() {
@@ -37,7 +36,7 @@ export default function Index() {
       <Hero />
       <Section innerRef={NewsRef} header="News">
         <NewsItem
-          heading="Mini Concert"
+          heading="Mini Concert Recruitment"
           subheading={<p>Register on or before 9 November</p>}
           icon={faChampagneGlasses}
         >
@@ -74,48 +73,14 @@ export default function Index() {
         </NewsItem>
 
         <NewsItem
-          heading="Subcommittee Function"
-          subheading={<p>Apply before 23 October</p>}
-          icon={faChampagneGlasses}
-        >
-          <Image src={subcomPng} width={350} />
-          <br />
-          We are now recruiting subcommittee members of the UPO! If you&apos;re interested in
-          organizing and hosting activities for your fellow UPO members, then don&apos;t hesitate to
-          reach out and sign up for the first subcommittee meeting!
-          <br />
-          <br />
-          Target Participants: Year 1 or 2 new members
-          <br />
-          <br />
-          Details of the 1st Subcommittee Meeting:
-          <ul className="list-inside list-disc">
-            <li>Date: 25th October, 2022 (Tue)</li>
-            <li>Time: 19:00 - 21:00</li>
-            <li>Venue: LG5 Conference Room</li>
-          </ul>
-          <br />
-          Application deadline: 23rd October, 2022
-          <br />
-          Click&nbsp;
-          <a
-            href="https://docs.google.com/forms/d/1_DOksAmpaCYd4Rj1IcNNrHkiQ9ZLjF_SzdnE_j1hozQ"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 underline"
-          >
-            here
-          </a>
-          &nbsp;for application.
-          <br />
-          <br />
-          If you have any enquiry, feel free to contact Harrison on 56111950 (WhatsApp). We hope to
-          see you there!
-        </NewsItem>
-
-        <NewsItem
           heading="Music Video Project"
-          subheading="Registration opens until 28 Feb 2023"
+          subheading={
+            <p>
+              Registration opens until 28 Feb 2023
+              <br />
+              Click to see submissions from our members!
+            </p>
+          }
           icon={faVideo}
         >
           <Image src={mvpPng} width={400} />
@@ -157,6 +122,30 @@ export default function Index() {
           <br />
           <br />
           We are looking forward to seeing your wonderful performance on the web!
+          <br />
+          <br />
+          <br />
+          <br />
+          ~ ~ ~ Music presented by Martin Wang ~ ~ ~
+          <br />
+          <br />
+          It&apos;s Halloween time👻 which also means it&apos;s time for some music🤪!
+          <br />
+          Our member Martin is going to present you with Rachmaninof&apos;s Etude-Tableau Op 39 No
+          6🤩. This piece is also known as &quot;Little Red Riding Hood&quot;, with the aggressive
+          melody and rhythm which would remind you of the big wolf chasing down the little red
+          riding hood, and swallowing her in the end😳 Hope you wo&apos;t get goosebumps👀…
+          <br />
+          <br />
+          <a
+            href="https://youtu.be/BN1J8fUToq8"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-400 underline"
+          >
+            {/* TODO: update link */}
+            YouTube Video
+          </a>
         </NewsItem>
 
         <NewsItem
