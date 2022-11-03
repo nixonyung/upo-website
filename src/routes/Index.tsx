@@ -1,5 +1,6 @@
 import {
   faChampagneGlasses,
+  faMasksTheater,
   faPeopleGroup,
   faPlayCircle,
   faVideo,
@@ -12,6 +13,7 @@ import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
 import Section from '../components/Section';
 import cabGroupWebp from '../images/cab-group.webp';
+import workshopPng from '../images/news-ConductorWorkshop.png';
 import miniConcertPng from '../images/news-MiniConcert.png';
 import mvpPng from '../images/news-MVP.png';
 import orchWebp from '../images/orch.webp';
@@ -35,6 +37,42 @@ export default function Index() {
     <>
       <Hero />
       <Section innerRef={NewsRef} header="News">
+        <NewsItem
+          heading="Conductor Workshop"
+          subheading={<p>Register on or before 21 November</p>}
+          icon={faMasksTheater}
+        >
+          <Image src={workshopPng} width={350} />
+          <br />
+          The conductor workshop is conducted by Dr. Ken Cheng Wing Kin. You will be learning the
+          art of conducting with an ensemble following your lead which allows you to experience
+          being on the other side of the orchestra.
+          <br />
+          <br />
+          Details:
+          <ul className="list-inside list-disc">
+            <li>Venue: LG5 Conference Room</li>
+            <li>Date: 22nd (Tuesday), 25th (Friday) November, 2022 </li>
+            <li>Time: 19:00-21:30</li>
+          </ul>
+          <br />
+          Application Deadline: 21st (Monday) November, 2022
+          <br />
+          Click&nbsp;
+          <a
+            href="https://forms.gle/df8umVFFED425u7E9"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-400 underline"
+          >
+            here
+          </a>
+          &nbsp;for application.
+          <br />
+          <br />
+          For any inquiries, feel free to contact Ivan (+852 6194 4458).
+        </NewsItem>
+
         <NewsItem
           heading="Mini Concert Recruitment"
           subheading={<p>Register on or before 9 November</p>}
