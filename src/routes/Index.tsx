@@ -13,7 +13,7 @@ import Hero from '../components/Hero';
 import NewsItem from '../components/NewsItem';
 import Section from '../components/Section';
 import cabGroupWebp from '../images/cab-group.webp';
-import workshopPng from '../images/news-ConductorWorkshop.png';
+// import workshopPng from '../images/news-ConductorWorkshop.png';
 import miniConcertPng from '../images/news-MiniConcert.png';
 import mvpPng from '../images/news-MVP.png';
 import orchWebp from '../images/orch.webp';
@@ -39,10 +39,10 @@ export default function Index() {
       <Section innerRef={NewsRef} header="News">
         <NewsItem
           heading="Conductor Workshop"
-          subheading={<p>Register on or before 21 November</p>}
+          subheading={<p>Register on or before 24 November</p>}
           icon={faMasksTheater}
         >
-          <Image src={workshopPng} width={350} />
+          {/* <Image src={workshopPng} width={350} /> */}
           <br />
           The conductor workshop is conducted by Dr. Ken Cheng Wing Kin. You will be learning the
           art of conducting with an ensemble following your lead which allows you to experience
@@ -52,11 +52,11 @@ export default function Index() {
           Details:
           <ul className="list-inside list-disc">
             <li>Venue: LG5 Conference Room</li>
-            <li>Date: 22nd (Tuesday), 25th (Friday) November, 2022 </li>
+            <li>Date: 25th (Friday), 29th (Tuesday) November, 2022</li>
             <li>Time: 19:00-21:30</li>
           </ul>
           <br />
-          Application Deadline: 21st (Monday) November, 2022
+          Application Deadline: 24th (Thursday) November, 2022
           <br />
           Click&nbsp;
           <a
